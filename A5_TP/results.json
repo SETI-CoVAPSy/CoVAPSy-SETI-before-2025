@@ -1,0 +1,16 @@
+[
+    {
+        "cpu_time": 1.338496,
+        "mem_percentage": 57.09,
+        "mem_time": 1.157984,
+        "mem_size": 110592,
+        "gpu_time": 2.185696,
+        "gpu_compute_time": 1.0277120000000002,
+        "src_path": "CUDA int",
+        "block_size": 2,
+        "resolution": [
+            256,
+            144
+        ]
+    }
+]

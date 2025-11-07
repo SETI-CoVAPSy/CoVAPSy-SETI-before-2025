@@ -1,0 +1,17 @@
+#cmake -DCMAKE_CUDA_FLAGS=”-arch=sm_30” ..
+cmake_minimum_required(VERSION 3.8)
+set(CUDACXX "/usr/local/cuda/bin/nvcc")
+set(CMAKE_CUDA_COMPILER "/usr/local/cuda/bin/nvcc")
+project(seuillage_CUDA LANGUAGES CXX CUDA)
+
+set(CMAKE_CUDA_SEPARABLE_COMPILATION ON)
+set(CMAKE_VERBOSE_MAKEFILE TRUE)
+
+set(CMAKE_CUDA_FLAGS "${CMAKE_CUDA_FLAGS} --use_fast_math")
+
+
+add_executable(seuillage_CUDA seuillage_C.cpp seuillage_main.cu)
+set_target_properties(seuillage_CUDA PROPERTIES POSITION_INDEPENDENT_CODE ON)
+target_compile_features(seuillage_CUDA PUBLIC cxx_std_11)
+target_include_directories(seuillage_CUDA PUBLIC ".")
+

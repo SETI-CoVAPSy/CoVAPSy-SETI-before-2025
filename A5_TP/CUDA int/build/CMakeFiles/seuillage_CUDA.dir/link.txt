@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/seuillage_CUDA.dir/seuillage_C_student.cpp.o CMakeFiles/seuillage_CUDA.dir/seuillage_main_student.cu.o -o seuillage_CUDA   -L/usr/local/cuda/targets/aarch64-linux/lib/stubs  -L/usr/local/cuda/targets/aarch64-linux/lib  -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

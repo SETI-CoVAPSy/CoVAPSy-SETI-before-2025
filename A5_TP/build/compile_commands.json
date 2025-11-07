@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/gilbert/A5_TP/build",
+  "command": "/usr/bin/aarch64-linux-gnu-g++  -I/home/gilbert/A5_TP/CUDA/inc -I/usr/local/cuda/samples/common/inc -g -fPIE -o CMakeFiles/seuillage_CUDA.dir/seuillage_C_student.cpp.o -c /home/gilbert/A5_TP/CUDA/seuillage_C_student.cpp",
+  "file": "/home/gilbert/A5_TP/CUDA/seuillage_C_student.cpp"
+},
+{
+  "directory": "/home/gilbert/A5_TP/build",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  -I/home/gilbert/A5_TP/CUDA/inc -I/usr/local/cuda/samples/common/inc  --use_fast_math -g -Xcompiler=-fPIE -x cu -c /home/gilbert/A5_TP/CUDA/seuillage_main_student.cu -o CMakeFiles/seuillage_CUDA.dir/seuillage_main_student.cu.o",
+  "file": "/home/gilbert/A5_TP/CUDA/seuillage_main_student.cu"
+}
+]
